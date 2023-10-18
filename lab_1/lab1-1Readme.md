@@ -6,17 +6,17 @@
 
 步骤一： 编写并多次运行图 1-1 中代码
 
-![Untitled](lab1-1/Untitled%201.png)
+![Untitled](lab1/Untitled%201.png)
 
 步骤二： 删去图 1-1 代码中的 wait()函数并多次运行程序，分析运行结果。
 
-![Untitled](lab1-1/Untitled%202.png)
+![Untitled](lab1/Untitled%202.png)
 
 可以发现当前情况下存在child有可能先于parent进程运行。
 
 步骤三： 修改图 1-1 中代码，增加一个全局变量并在父子进程中对其进行不同的操作，观察并解释所做操作和输出结果。
 
-![Untitled](lab1-1/Untitled%203.png)
+![Untitled](lab1/Untitled%203.png)
 
 我定义了一个全局变量flag，在parent进程中修改其为2000，child进程中修改为1000并分别打印结果。
 
@@ -24,13 +24,13 @@
 
 步骤四： 在步骤三基础上，在 return 前增加对全局变量的操作（自行设计）并输出结果，观察并解释所做操作和输出结果
 
-![Untitled](lab1-1/Untitled%204.png)
+![Untitled](lab1/Untitled%204.png)
 
 清晰明了。
 
 步骤五： 修改图 1-1 程序，在子进程中调用 system()与 exec 族函数。 编写system_call.c 文件输出进程号 PID，编译后生成 system_call 可执行文件。在子进程中调用 system_call,观察输出结果并分析总结。
 
-![Untitled](lab1-1/Untitled%205.png)
+![Untitled](lab1/Untitled%205.png)
 
 ### **使用 `system()` 调用**
 
